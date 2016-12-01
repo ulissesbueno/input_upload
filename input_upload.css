@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+{
+	background:#E6EDEE;
+	color:#526472;
+	background-image:url(js/input_upload/images/folder-horizontal-open-icon.png)
+	
+}
+
+.input-file-upload{
+	width: 100% ;
+	height: 100% ;
+	border: solid 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.input-file-upload .ifu-background{
+	width: 100% ;
+	height: 100%;
+	background-image:url(js/input_upload/images/City-No-Camera-icon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+}
+
+
+.input-file-upload.void .ifu-background{
+	opacity: 0.2;
+}
+
+.input-file-upload.loading .ifu-background{
+	opacity: none;
+	background-image:url(http://localhost/input_upload/images/ajax-loader.gif);
+}
+
+.input-file-upload .ifu-buttons{
+	position: absolute;
+	width: 100% ;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;	
+	/*height: 32px; */
+	bottom: -32px;
+	margin: auto;
+}
+
+.input-file-upload .ifu-buttons .ifu-item{
+	float: left;
+	width: 50% !important;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	text-align: center;
+	/*line-height: 32px;*/
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	background: #fff;
+}
+
+.input-file-upload .ifu-buttons .ifu-item.up{
+	background: #1A6187;
+	color: #FFF;
+
+	/*background-image:url(http://localhost/input_upload/images/56-cloud-icon.png);*/
+}
+.input-file-upload .ifu-buttons .ifu-item.del{
+	background: #BF120F;
+	color: #FFF;
+	
+	/*background-image:url(http://localhost/input_upload/images/Programming-Delete-Sign-icon.png);*/
+}
+
+
+.input-file-upload.void .ifu-buttons .ifu-item.del{
+	display: none !important;
+}
